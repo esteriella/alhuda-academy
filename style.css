@@ -413,7 +413,9 @@ ul li:last-child {
 .offers {
     display: grid;
     grid-template-columns: 1 1fr; /* Grid layout for offers */
-    gap: 120px; /* Gap between offers */
+    gap: 50px; /* Gap between offers */
+    padding-left:50px;
+    padding-right: 50px;
 }
 
 .offer-h2 {
@@ -428,6 +430,7 @@ ul li:last-child {
     display: flex;
     flex-direction: row-reverse;
     /* align-items: center; */
+    gap: 100px;
     justify-content: space-around;
 }
 
@@ -435,6 +438,7 @@ ul li:last-child {
     display: flex;
     flex-direction: row;
     /* align-items: center; */
+    gap: 100px;
     justify-content: space-around;
 }
 
@@ -548,10 +552,15 @@ p{
         justify-content: center;
     }
 
+    .offers{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .instructor-offers, .affiliate-offers {
         flex-direction: column; /* Column layout for offers */
-        align-items: center; /* Center align items */
-        
+        align-items: center; /* Center align items */           
+        gap: 0px;
      }
 
      .offer-texts {
@@ -704,7 +713,7 @@ p{
     .instructor-offers, .affiliate-offers {
        flex-direction: column; /* Column layout for offers */
        align-items: center; /* Center align items */
-       
+       gap: 0px;
     }
 
     .service-container {
@@ -714,6 +723,8 @@ p{
 
     .offers {
         gap: 20px; /* Gap between offers */
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .offer-texts {
