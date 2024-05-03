@@ -1,8 +1,8 @@
-## Responsive Landing Page: Al Huda Academy
+# Responsive Landing Page: Al Huda Academy
 
-This project showcases a responsive landing page design for Zack Academy, tailored to provide an optimal user experience across different devices. The layout adapts dynamically to varying screen sizes, ensuring accessibility and usability.
+This project showcases a responsive landing page design for Al Huda Academy, tailored to provide an optimal user experience across different devices. The layout adapts dynamically to varying screen sizes, ensuring accessibility and usability.
 
-### Features:
+## Features
 
 - **Navigation Bar:**
   - Includes a logo and navigation links for seamless browsing.
@@ -32,7 +32,7 @@ This project showcases a responsive landing page design for Zack Academy, tailor
   - Contains essential links such as certificate verification, help center, and policies.
   - Reinforces brand identity with copyright information and branding elements.
 
-### Technologies Used:
+## Technologies Used
 
 - **HTML:** Implements the structure and content of the landing page.
 - **CSS (style.css):** Applies styles to enhance visual appeal and responsiveness.
@@ -40,13 +40,16 @@ This project showcases a responsive landing page design for Zack Academy, tailor
   - Manages dropdown menus, mobile navigation, and form interactions.
 - **Media Queries:** Ensures responsiveness across various devices without external libraries.
 
-### Responsive Design:
+## Responsive Design
 
 - Utilizes custom media queries for tablets, mobile devices, and desktop screens.
 - Ensures consistent layout and readability across different viewport sizes.
-  
-### Next Steps:
 
-- **Optimization:** Continuously optimize performance and responsiveness.
-- **Content Updates:** Regularly update course offerings and featured content.
-- **User Feedback:** Gather user feedback to enhance the overall user experience.
+
+## Author
+
+[Opeyemi Esther Agbaje](https://github.com/esteriella)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
