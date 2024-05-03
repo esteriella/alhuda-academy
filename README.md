@@ -45,7 +45,6 @@ This project showcases a responsive landing page design for Al Huda Academy, tai
 - Utilizes custom media queries for tablets, mobile devices, and desktop screens.
 - Ensures consistent layout and readability across different viewport sizes.
 
-
 ## Author
 
 [Opeyemi Esther Agbaje](https://github.com/esteriella)
