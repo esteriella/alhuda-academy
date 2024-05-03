@@ -10,9 +10,9 @@ body {
     align-items: center;
 }
 
-.logo-img {
-    height: 40px; /* Logo image height */
-}
+/* .logo-img {
+    height: 40px; /* Logo image height 
+} */
 
 .logo-span {
     color: rgba(0, 123, 255, 0.7); /* Logo text color with opacity */
