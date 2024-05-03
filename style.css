@@ -1,0 +1,775 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px; /* Logo image height */
+}
+
+.logo-span {
+    color: rgba(0, 123, 255, 0.7); /* Logo text color with opacity */
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 24px; /* Set font size for logo text */
+}
+
+h1, h2, h3 {
+    color: #2e2e2e; /* Heading text color */
+}
+
+/* Styles for anchor (link) elements */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
+/* Navbar Styles */
+
+.navbar-container {
+    height: 70px; /* Navbar container height */
+    position: relative; /* Relative positioning */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px; /* Padding for navbar */
+}
+
+.hamburger-menu {
+    display: none; /* Initially hide for larger screens */
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .mobile-menu{
+    margin-top: 40vh;
+    margin-left: 35vw;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    padding: 10px 10px;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-items{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 20px;
+    gap: 5px;
+  }
+
+  .enroll-btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgba(0, 123, 255, 0.7); /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button border */
+    width: 10rem;
+  }
+
+  .nav-links li {
+    margin-right: 15px;
+  }
+/*ul {
+    list-style-type: none;  Remove default list style 
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px; /* Margin between navbar items 
+}
+
+ul li:last-child {
+    margin-right: 0; /* Remove margin from the last navbar item 
+}*/
+
+.auth-buttons button {
+    margin-left: 10px; /* Margin between auth buttons */
+    padding: 15px 20px;
+    background-color: rgba(0, 123, 255, 0.7); /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button border */
+    width: 10rem;
+}
+
+/* .search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 8px; /* Input padding 
+    border: none; /* Remove input border 
+    border-radius: 5px; /* Rounded input border 
+} */
+
+.search-form-button {
+    border: none; /* Remove button border */
+    background-color: transparent; /* Transparent button background */
+    cursor: pointer; /* Set cursor to pointer */
+    padding: 0 10px; /* Button padding */
+}
+
+.search-form button img {
+    height: 20px; /* Image height within the button */
+}
+
+.dropdown-content {
+    margin-top: 31px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .divdropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    
+  }
+
+  .p-programs {
+    text-align: start;
+  }
+
+  .divdropdrown-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+/* Style for the single image section */
+.single-image-section {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  /* Style for the background image container */
+  .background-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Style for the overlay with text and button */
+  .image-overlay {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    color: white;
+    text-align: center;
+  }
+  
+  /* Style for the image caption */
+  .image-caption {
+    width: 100%; /* Limit width of text to 80% of overlay */
+  }
+  
+  .image-caption-h2 {
+    color: #fff;
+    font-size: 44px;
+  }
+
+  .image-caption-para {
+    font-size: 24px;
+  }
+
+  .image-caption-span {
+    color: rgba(0, 123, 255, 10);
+  }
+
+  .searchform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 70px;
+    width: 60rem;
+    margin-left: 200px;
+    padding: 0px 50px;
+    border-radius: 50px;
+    /* border: 2px solid rgba(0, 123, 255, 0.7); */
+}
+
+.search-input {
+    padding: 8px; /* Input padding */
+    width: 25rem;
+    border: none; /* Remove input border */
+    border-radius: 5px; /* Rounded input border */
+}
+
+.searchimg {
+    padding-left: 10px;
+    height: 20px; /* Image height within the button */
+}
+
+.searchbtn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 15rem;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.7);
+}
+
+.searchbtn span {
+    font-size: 16px;
+    font-weight: large;
+}
+
+/* Categories Container Styles */
+
+.categories-container {
+    margin: 0px 50px;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 50px 0px 50px; /* Margin for course section */
+}
+
+.categories-btn {
+    padding: 15px 20px; /* Padding for category buttons */
+    background-color: rgba(0, 123, 255, 0.7); /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button border */
+    width: 10rem;
+}
+
+.categories-courses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Grid layout for categories courses */
+    gap: 40px;
+    margin: 5px 50px; /* Margin for categories courses */
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 50px;
+    align-items: center;
+    border: 1px solid #ededed;
+    /* padding: 0px 10px; */
+    padding-left: 30px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.courses p {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* .categorydiv {
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+
+} */
+
+.img-category {
+    width: 50px; /* Icon image width */
+    background-color: rgba(0, 123, 255, 0.1); /* Icon background color */
+    border-radius: 50px; /* Rounded border radius */
+    padding: 10px; /* Padding for icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for icon */
+}
+
+/* Popular Courses */
+.courses-container {
+    margin: 0px 50px;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 50px 0px 50px; /* Margin for course section */
+    
+}
+
+.course-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Grid layout for course cards */
+    gap: 50px; /* Gap between course cards */
+    margin: 5px 50px; /* Margin for course cards */
+}
+
+.course-para { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px; /* Margin for course paragraph */
+}
+
+.img {
+    width: 100%; /* Responsive image width */
+}
+
+.img-cards {
+    border: 1px solid #ededed; /* Border for image cards */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Shadow effect for image cards */
+    border-radius: 8px; /* Rounded border radius */
+}
+
+.img-cards h4 {
+    margin-left: 10px; /* Margin for card heading */
+    /* color: rgba(0, 123, 255, 0.7);  Heading text color */
+}
+
+
+.amount-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px; /* Margin for amount division */
+}
+
+.imgicon {
+    width: 20px;
+}
+
+/* Offers Styles */
+.service-container {
+    text-align: center;
+    margin: 80px 50px; /* Bottom margin for service container */
+    /*margin-top: 100px;  Top margin for service container */
+    
+}
+
+.offers {
+    display: grid;
+    grid-template-columns: 1 1fr; /* Grid layout for offers */
+    gap: 120px; /* Gap between offers */
+}
+
+.offer-h2 {
+    margin-top: 5px 0px;
+}
+
+.offer-p {
+    margin-bottom: 50px;
+}
+
+.instructor-offers {
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.affiliate-offers {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.offer-img {
+    width: 600px; /* Offer image width */
+    height: 370px; /* Offer image height */
+    border-radius: 10px;
+}
+
+.offer-texts {
+    text-align: start;
+    margin-top: 50px; /* Margin for offer texts */
+}
+
+.offer-texts h3 {
+    font-size: 30px; /* Heading font size */
+    font-weight: 300px; /* Heading font weight */
+    color: rgba(0, 123, 255, 0.7); /* Heading text color */
+}
+
+.offer-texts p {
+    font-size: 20px; /* Paragraph font size */
+}
+
+.cta-button {
+    padding: 20px 50px; /* Button padding */
+    background-color: rgba(0, 123, 255, 0.7); /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button border */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    font-size: large;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: rgba(0, 123, 255, 0.7); /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 10px 0; /* Padding for footer */
+    text-align: center; /* Center align text within footer */
+}
+
+.footer-container {
+    margin: 0px 50px; /* Margin for footer container */
+    display: flex;
+    flex-direction: row;
+    gap: 450px; /* Gap between footer columns */
+}
+
+.footer-column2 {
+    display: flex;    
+    gap: 20px; /* Gap between footer links */
+    margin-top: 5px; /* Margin for footer links */
+    flex: 1;
+}
+
+.footer-column h3 {
+    color: #fff; /* Footer column heading text color */
+    font-weight: 100;
+}
+
+p{
+    font-weight: 100;
+}
+  
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 768px) and (max-width: 1299px){
+    
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .logo-img {
+        height: 50px;
+    }
+
+    .logo-span {
+        font-size: 20px;
+    }
+
+    .nav-links{
+        font-size: small;
+    }
+
+    .categories-courses {
+        grid-template-columns: repeat(2, 2fr); /* Single column layout for categories courses */
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center justify content */
+    } 
+
+    .searchform {
+        margin-left: 8vw;
+        width: 80%;
+        height: 50px;
+        padding: 0px 15px;
+    }
+
+    .course-cards {
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instructor-offers, .affiliate-offers {
+        flex-direction: column; /* Column layout for offers */
+        align-items: center; /* Center align items */
+        
+     }
+
+     .offer-texts {
+        margin: 10px 40px;
+        width: 80%;
+    }
+
+    .offer-img {
+        width: 80%; /* Adjust width for offer image */
+        height: 150%;
+    }
+
+    footer {
+        overflow: hidden;
+    }
+    .footer-container {
+        flex-direction: column; /* Column layout for footer container */
+        gap: 0px; /* Adjust gap between footer columns */
+    }
+
+    .footer-column2 {
+        gap: 5px;
+        margin-top: 0px;
+        display: block;
+    }
+
+}
+
+/* Small screens (mobile devices) */
+
+@media  only screen and (max-width: 767px) {
+    /* * {
+        margin: 0px;
+        padding: 0px;
+    } */
+
+    .navbar {
+        padding: 10px 20px;
+    }
+    .logo-img {
+        height: 30px;
+    }
+
+    .logo-span {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default on smaller screens */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when menu is active */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+
+    .auth-buttons {
+        display: none; /* Hide enroll button on smaller screens */
+    }
+
+    .cta-button {
+        padding: 20px 20px; /* Button padding */
+        
+        font-size: medium;
+    }
+
+    .search-form-button {
+        display: none; /* Hide search button on smaller screens */
+    }
+
+    .categories-btn {
+        padding: 10px 10px; /* Padding for category buttons */
+        width: 5rem;
+    }
+
+    .divdropdrown-list {
+        flex-direction: column; /* Adjust direction for dropdown lists */
+    }
+
+    .divdropdown {
+        flex-direction: column; /* Adjust direction for dropdown content */
+    }
+
+    .searchform {
+        margin-left: 8vw;
+        width: 80%;
+        height: 50px;
+        padding: 0px 15px;
+    }
+
+    .searchbtn span {
+        display: none;
+        font-size: 12px;
+    }
+
+    .searchbtn {
+        width: 3rem;
+    }
+
+    .search-input {
+        width: 15rem;
+    }
+
+    .searchimg {
+        height: 15px;
+    }
+
+    .image-caption-h2 {
+        font-size: 20px; /* Adjust font size for image captions */
+    }
+
+    .image-caption-para {
+        font-size: 14px; /* Adjust font size for image paragraphs */
+    }
+
+    .categories-container {
+        margin: 0px;
+    }
+
+    .categories-courses {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout for categories courses */
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center justify content */
+    }   
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .cate-para {
+        font-size: 12px;
+    }
+
+    .courses-container {
+        margin: 0px;
+    }
+
+    .course-cards {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .instructor-offers, .affiliate-offers {
+       flex-direction: column; /* Column layout for offers */
+       align-items: center; /* Center align items */
+       
+    }
+
+    .service-container {
+        margin: 80px 0px; 
+        
+    }
+
+    .offers {
+        gap: 20px; /* Gap between offers */
+    }
+
+    .offer-texts {
+        margin: 10px 40px;
+        width: 80%;
+    }
+
+    .offer-texts h3 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 20px; /* Adjust font size for offer heading */
+    }
+
+    .offer-texts p {
+        margin-top: 5px;
+        font-size: 14px; /* Adjust font size for offer text */
+    }
+
+    /* .offer-h2 {
+        margin-top: 5px 0px;
+
+    }*/
+
+    .offer-p {
+        margin: 30px 50px;
+    } 
+
+
+    .offer-img {
+        width: 80%; /* Adjust width for offer image */
+        height: 150%;
+    }    
+    
+    .offer-texts {
+        margin-bottom: 30px; /* Adjust margin for offer texts */
+    }
+
+    footer {
+        overflow: hidden;
+    }
+    .footer-container {
+        flex-direction: column; /* Column layout for footer container */
+        gap: 20px; /* Adjust gap between footer columns */
+    }
+
+}
+
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles for medium-sized screens */
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Adjust styles for large screens (desktops) */
+}
+  
+  

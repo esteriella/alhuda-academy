@@ -1,0 +1,471 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>::Zack Academy::</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar-container">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+          <!--  Logo and site name  -->
+          <div class="logo">
+            <img
+              class="logo-img"
+              width="50px"
+              height="20px"
+              src="/images/logo.png"
+              alt="Logo"
+            />
+            <span class="logo-span">AL Huda</span>
+          </div>
+          <!---  Navgation links  -->
+          <ul class="nav-links" id="navLinks">
+            <li class="dropdown">
+              <a href="#home">Course & Certifications</a>
+              <div class="dropdown-content">
+                <div class="divdropdown">
+                  <div class="p-programs">
+                    <h4>Popular Programs</h4>
+                    <div class="divdropdrown-list">
+                      <div>
+                        <a href="#">Accounting</a>
+                        <a href="#">Business Management</a>
+                        <a href="#">Computer Science</a>
+                        <a href="#">Data Science</a>
+                        <a href="#">Engineering & Maintenance</a>
+                      </div>
+
+                      <div>
+                        <a href="#">Customer Service and Support</a>
+                        <a href="#">Event Management</a>
+                        <a href="#">HSE Professional</a>
+                        <a href="#">Information Technology</a>
+                        <a href="#">Interior Decor</a>
+                      </div>
+
+                      <div>
+                        <a href="#">Estate Management</a>
+                        <a href="#">HR Management</a>
+                        <a href="#">Mini-MBA Agribusiness</a>
+                        <a href="#">Project Management</a>
+                        <a href="#">Shipping & Logistics</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Diplomas</h4>
+                    <a href="#">Cloud Computing</a>
+                    <a href="#">Digital Marketing</a>
+                    <a href="#">Financial Accounting</a>
+                    <a href="#">Hospitality Management</a>
+                    <a href="#">Office Management</a>
+                    <a href="#">Telecommunication</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#home">EA Services</a>
+              <div class="dropdown-content">
+                <a href="#">Foreign Education Services</a>
+                <a href="#">Premium HR Services</a>
+                <a href="#">Corporate Training</a>
+                <a href="#">Education Consultancy</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#home">Resources</a>
+              <div class="dropdown-content">
+                <a href="#">Help Center</a>
+                <a href="#">Upcoming Event</a>
+                <a href="#">News & Blog</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Certificate Verification</a>
+                <a href="#">Pay Online</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#home">Company</a>
+              <div class="dropdown-content">
+                <a href="#">About Al Huda</a>
+                <a href="#">Partners</a>
+                <a href="#">Contact Us</a>
+              </div>
+            </li>
+          </ul>
+          <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-items">
+              <a href="#home">Course & Certifications</a>
+              <a href="#home">EA Services</a>
+              <a href="#home">Resources</a>
+              <a href="#home">Company</a>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+          <!---  Authentication buttons  -->
+          <div class="auth-buttons">
+            <button>Enroll Now</button>
+          </div>
+          <!--  Search form  -->
+          <!-- <form class="search-form">
+            <button class="search-form-button" type="button" onclick="handlesearch()">
+              <img src="/images/searchicon.png" alt="Search" />
+            </button>
+          </form> -->
+          <!-- Hamburger Menu -->
+          <div class="hamburger-menu" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="single-image-section">
+        <!-- Image with caption -->
+        <div class="image-content">
+          <!-- Background image -->
+          <div
+            class="background-image"
+            style="background-image: url('/images/building1.jpg')"
+          >
+            <!-- Text and button overlay -->
+            <div class="image-overlay">
+              <div class="image-caption">
+                <h2 class="image-caption-h2">
+                  Find your Preferred Courses<br />
+                  Step-Up your Career
+                </h2>
+                <p class="image-caption-para">
+                  Tons of professional programs, courses and certifications<br />
+                  in partnership with top institutions
+                </p>
+                <!-- <a href="#" class="explore-button">Explore</a> -->
+                <form class="searchform">
+                  <input
+                    id="searchInput"
+                    class="search-input"
+                    type="text"
+                    placeholder="What do you want to learn today?"
+                  />
+                  <button id="searchButton" type="button" class="searchbtn">
+                    <img
+                      src="/images/search.png"
+                      class="searchimg"
+                      alt="Search"
+                    /><span>Search Courses</span>
+                  </button>
+                </form>
+                <p>
+                  Trending Search: Career Advancement, Certifications,
+                  Agribusiness, IT Programs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  Featured Categories section  -->
+      <section class="categories-container">
+        <div class="categories">
+          <div>
+            <h2>Featured Categories</h2>
+            <p class="cate-para">Our Popular Categories</p>
+          </div>
+          <button class="categories-btn" type="submit">All Categories</button>
+        </div>
+        <!--  Courses under featured categories-->
+        <section class="categories-courses" id="category-course">
+          <div class="courses">
+            <div>
+              <img
+                class="img-category"
+                src="/images/agribusiness.png"
+                alt="education icon"
+              />
+            </div>
+            <div>
+              <h4>Agribusiness</h4>
+              <p>40 Courses</p>
+            </div>
+          </div>
+          <div class="courses">
+            <div>
+              <img
+                class="img-category"
+                src="/images/career.png"
+                alt="education icon"
+              />
+            </div>
+            <div>
+              <h4>Career Advancement</h4>
+              <p>33 Courses</p>
+            </div>
+          </div>
+          <div class="courses">
+            <div>
+              <img
+                class="img-category"
+                src="/images/certificate.png"
+                alt="education icon"
+              />
+            </div>
+            <div>
+              <h4>Certifications</h4>
+              <p>65 Courses</p>
+            </div>
+          </div>
+          <div class="courses">
+            <div>
+              <img
+                class="img-category"
+                src="/images/diploma.png"
+                alt="education icon"
+              />
+            </div>
+            <div>
+              <h4>Diplomas</h4>
+              <p>28 Courses</p>
+            </div>
+          </div>
+          <div class="courses">
+            <div>
+              <img
+                class="img-category"
+                src="/images/ITtraining.png"
+                alt="education icon"
+              />
+            </div>
+            <div>
+              <h4>IT Training</h4>
+              <p>63 Courses</p>
+            </div>
+          </div>
+          <div class="courses">
+            <div class="categorydiv">
+              <img
+                class="img-category"
+                src="/images/personal-development.png"
+                alt="education icon"
+              />
+            </div>
+            <div>
+              <h4>Personal Development</h4>
+              <p>40 Courses</p>
+            </div>
+          </div>
+          <div class="courses">
+            <div>
+              <img
+                class="img-category"
+                src="/images/skill-acquisition.png"
+                alt="education icon"
+              />
+            </div>
+            <div>
+              <h4>Skill Acquicision</h4>
+              <p>39 Courses</p>
+            </div>
+          </div>
+          <div class="courses">
+            <div>
+              <img
+                class="img-category"
+                src="/images/examprep.png"
+                alt="education icon"
+              />
+            </div>
+            <div>
+              <h4>Exam Prep</h4>
+              <p>19 Courses</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!--  Popular Courses section  -->
+      <section class="courses-container">
+        <div class="course">
+          <div>
+            <h2>Our Popular Courses</h2>
+            <p class="cate-para">600+ Online Courses</p>
+          </div>
+          <button class="categories-btn" type="submit">All Courses</button>
+        </div>
+        <!---  Course cards  -->
+        <section class="course-cards" id="course-card">
+          <div class="img-cards">
+            <div>
+              <img class="img" src="./images/student.jpg" alt="student" />
+            </div>
+            <div>
+              <h4>Certificate in Shipping Management</h4>
+              <p class="course-para">
+                <span>12 Week</span
+                ><span style="font-style: italic; font-size: 14px"
+                  >30 Lessons</span
+                >
+              </p>
+              <hr />
+              <div class="amount-div">
+                <span
+                  ><img
+                    class="imgicon"
+                    src="/images/education.png"
+                    alt="education"
+                  />
+                </span>
+                <span>₦120,000.00 </span>
+              </div>
+            </div>
+          </div>
+          <div class="img-cards">
+            <div>
+              <img class="img" src="./images/student.jpg" alt="student" />
+            </div>
+            <div>
+              <h4>Project Management</h4>
+              <p class="course-para">
+                <span>12 Week</span
+                ><span style="font-style: italic; font-size: 14px"
+                  >30 Lessons</span
+                >
+              </p>
+              <hr />
+              <div class="amount-div">
+                <span
+                  ><img
+                    class="imgicon"
+                    src="/images/education.png"
+                    alt="education"
+                  />
+                </span>
+                <span>₦120,000.00 </span>
+              </div>
+            </div>
+          </div>
+          <div class="img-cards">
+            <div>
+              <img class="img" src="./images/student.jpg" alt="student" />
+            </div>
+            <div>
+              <h4>Diploma in IT Infrastructure</h4>
+              <p class="course-para">
+                <span>12 Week</span
+                ><span style="font-style: italic; font-size: 14px"
+                  >30 Lessons</span
+                >
+              </p>
+              <hr class="hr" />
+              <div class="amount-div">
+                <span
+                  ><img
+                    class="imgicon"
+                    src="/images/education.png"
+                    alt="education"
+                  />
+                </span>
+                <span>₦120,000.00 </span>
+              </div>
+            </div>
+          </div>
+          <div class="img-cards">
+            <div>
+              <img class="img" src="./images/student.jpg" alt="student" />
+            </div>
+            <div>
+              <h4>Diploma in Telecommunications</h4>
+              <p class="course-para">
+                <span>12 Week</span
+                ><span style="font-style: italic; font-size: 14px"
+                  >30 Lessons</span
+                >
+              </p>
+              <hr />
+              <div class="amount-div">
+                <span
+                  ><img
+                    class="imgicon"
+                    src="/images/education.png"
+                    alt="education"
+                  />
+                </span>
+                <span>₦120,000.00 </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!--  Our Offers section  -->
+      <section id="" class="">
+        <div class="service-container">
+          <h2 class="offer-h2">Our Offers</h2>
+          <p class="offer-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, eos.
+          </p>
+          <!--  Offers for Instructors and affliate-->
+          <div class="offers">
+            <div class="instructor-offers">
+              <!--  Instructor offer  -->
+              <img
+                class="offer-img"
+                src="/images/instruct1.jpg"
+                alt="instructor"
+              />
+              <div class="offer-texts">
+                <h3>Become an Instructor</h3>
+                <p>
+                  Be part of our experienced tutors and share your knowledge
+                  with millions of learners around the world.
+                </p>
+                <button class="cta-button">Apply Now</button>
+              </div>
+            </div>
+            <!--  Affliate offer  -->
+            <div class="affiliate-offers">
+              <img
+                class="offer-img"
+                src="/images/instruct1.jpg"
+                alt="instructor"
+              />
+              <div class="offer-texts">
+                <h3>Become an Affiliate</h3>
+                <p>
+                  Join our network of independent sales agents and freelance
+                  marketers promoting courses and earning huge commissions.
+                </p>
+                <button class="cta-button">Join Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  Footer section  -->
+      <footer>
+        <div class="footer-container">
+          <!-- Footer columns and with links-->
+          <div class="footer-column">
+            <h3>© 2024 Al Huda Academy. All Right Reserved.</h3>
+          </div>
+          <div class="footer-column2">
+            <a><p>Certificate Verification</p></a>
+            <a><p>Help Center</p></a>
+            <a><p>Refund Policy</p></a>
+            <a><p>Privacy Policy</p></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
